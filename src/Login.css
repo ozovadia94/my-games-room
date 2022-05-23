@@ -1,4 +1,4 @@
-body{
+/* body{
 	margin: 0;
 	padding: 0;
 	display: flex;
@@ -7,7 +7,7 @@ body{
 	min-height: 100vh;
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0c1729, #2b3963, #24333e);
-}
+} */
 .main{
 	width: 350px;
 	height: 500px;

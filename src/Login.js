@@ -8,7 +8,7 @@ function Login() {
     const [userName, setUserName] = useState("")
 
     useEffect(() => {
-        const signUpButton = 22;
+        console.log('useEffecttt')
     }, [])
 
 
