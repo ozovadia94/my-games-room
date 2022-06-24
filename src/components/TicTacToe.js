@@ -16,10 +16,9 @@ function TicTacToe() {
     var [bool_finished, setBool_finished] = useState(false)
     var [numOfMoves, setNumOfMoves] = useState(0)
     var [vsComputer, setVsComputer] = useState(false)
-    var [playerTurn, setplayerTurn] = useState(false)
     var [result, setResult] = useState(new Array(2).fill(0))
-  
-    var [canPlay, setCanPlay] = useState
+    var [canPlay, setCanPlay] = useState(false)//prevent clicks in some cases
+
     function sleep(ms) {
         return new Promise(resolve => setTimeout(resolve, ms));
     }
@@ -64,7 +63,7 @@ function TicTacToe() {
                 else
                     sleep(500).then(() => {
                         changePlayer()
-                    })
+                    }).then(()=>setCanPlay(true))
 
         })
 
@@ -105,6 +104,11 @@ function TicTacToe() {
 
 
     async function button_pressed(e) {
+        if(canPlay===false)
+            return;
+        else
+            setCanPlay(false)
+            
         if (bool_finished)
             return;
 

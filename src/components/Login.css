@@ -8,6 +8,8 @@
 	font-family: 'Jost', sans-serif;
 	background: linear-gradient(to bottom, #0c1729, #2b3963, #24333e);
 } */
+
+
 .main{
 	width: 350px;
 	height: 500px;
@@ -17,10 +19,11 @@
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
+
 #chk{
 	display: none;
 }
-.signup{
+.login{
 	position: relative;
 	width:100%;
 	height: 100%;
@@ -67,24 +70,24 @@ button{
 button:hover{
 	background: #24333e;
 }
-.login{
+.signup{
 	height: 460px;
 	background: #eee;
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;
 }
-.login label{
+.signup label{
 	color: #2b3963;
 	transform: scale(.6);
 }
 
-#chk:checked ~ .login{
+#chk:checked ~ .signup{
 	transform: translateY(-500px);
 }
-#chk:checked ~ .login label{
+#chk:checked ~ .signup label{
 	transform: scale(1);	
 }
-#chk:checked ~ .signup label{
+#chk:checked ~ .login label{
 	transform: scale(.6);
 }
