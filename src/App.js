@@ -27,7 +27,6 @@ function App() {
   return (
     <div className="App center">
       
-    
       {/* { l || check ? */}
       {true ?
       <div>
